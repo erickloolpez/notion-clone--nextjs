@@ -7,6 +7,7 @@ import { useParams, usePathname, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 import { ChevronsLeft, MenuIcon } from "lucide-react";
+import { UserItem } from "./UserItem";
 
 const Navigation = () => {
   const router = useRouter();
@@ -115,6 +116,9 @@ const Navigation = () => {
           )}
         >
           <ChevronsLeft className="h-6 w-6" />
+        </div>
+        <div>
+          <UserItem />
         </div>
         <div
           onMouseDown={handleMouseDown}
