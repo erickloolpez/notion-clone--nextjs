@@ -28,6 +28,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@radix-ui/react-popover";
+import { TrashBox } from "./trash-box";
 
 const Navigation = () => {
   const router = useRouter();
@@ -169,7 +170,7 @@ const Navigation = () => {
               className="p-0 w-72"
               side={isMobile ? "bottom" : "right"}
             >
-              {/*<TrashBox />*/}
+              <TrashBox />
             </PopoverContent>
           </Popover>
         </div>
