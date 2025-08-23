@@ -29,6 +29,7 @@ import {
   PopoverTrigger,
 } from "@radix-ui/react-popover";
 import { TrashBox } from "./trash-box";
+import { Navbar } from "./navbar";
 
 const Navigation = () => {
   const router = useRouter();
@@ -189,7 +190,7 @@ const Navigation = () => {
         )}
       >
         {!!params.documentId ? (
-          <div>hola mu</div>
+          <Navbar isCollapsed={isCollapsed} onResetWidth={resetWidth} />
         ) : (
           <nav
             className={cn(
